@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\mi_clase;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,7 +28,9 @@ Route::get('/singletwo.blade.php', function () {
 });
 
 Route::get('/singlethree.blade.php', function () {
-    return view('singlethree');
+    $clase=new mi_clase();
+    $clase->tema="Reconocer protocolos de comunicación de red";
+    return view('singlethree',["mi_clase" => $clase]);
 });
 Route::get('/singlefour.blade.php', function () {
     return view('singlefour');

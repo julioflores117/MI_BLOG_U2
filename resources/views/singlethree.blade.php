@@ -86,7 +86,7 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">Reconocer protocolos de comunicación de red</a></h2>
+										<h2><a href="#">{{$clase->tema}}</a></h2>
 										<p>Tipos de protocolos de red</p>
 									</div>
 									<div class="meta">
